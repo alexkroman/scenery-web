@@ -1,7 +1,8 @@
 class Post < ActiveRecord::Base
   attr_accessible :photo
   has_attached_file :photo, 
-  :styles => { :medium => "300>x800>" },
+  :styles => { :medium => "300x800>" },
+  :convert_options => { :all => '-auto-orient' },
   :storage => :s3,
       :bucket => ENV['S3_BUCKET_NAME'],
       :s3_credentials => {
