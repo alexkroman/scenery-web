@@ -1,7 +1,7 @@
 <div id="posts" style="display:none;">
 <% @posts.each do |post| %>
   <div class="images">
-    <%= image_tag post.photo.url(:medium) %>
+    <%= image_tag post.photo.url(:small) %>
     <br />
     <%= link_to 'Destroy', post, confirm: 'Are you sure?', method: :delete %>
   </div>

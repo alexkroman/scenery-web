@@ -1,7 +1,7 @@
 <div id="posts" style="display:none;">
 <% @posts.each do |post| %>
   <div class="images">
-    <a href="ios://view"><%= image_tag post.photo.url(:medium) %></a>
+    <a href="ios://view"><%= image_tag post.photo.url(:small) %></a>
   </div>
 <% end %>
 </div>
