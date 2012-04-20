@@ -10,6 +10,17 @@ class PostsController < ApplicationController
     end
   end
 
+  # GET /list
+  # GET /list.json
+  def list
+    @posts = Post.all.reverse
+
+    respond_to do |format|
+      format.html # list.html.erb
+      format.json { render json: @posts }
+    end
+  end
+
   # GET /posts/1
   # GET /posts/1.json
   def show
