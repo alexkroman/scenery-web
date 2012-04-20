@@ -4,15 +4,11 @@
   <%= render "head" %>
 
   <body class="pages">
-    <%= render "chromeframe" %>
-    <%= render "header" %>
 
     <div id="main" role="main">
       <%= render "flashes" %>
       <%= yield %>
     </div>
-
-    <%= render "footer" %>
 
     <%# Javascript at the bottom for fast page loading %>
     <%= render "javascripts" %>
