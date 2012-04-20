@@ -19,10 +19,12 @@ group :assets do
   # gem 'therubyracer', :platform => :ruby
 
   gem 'uglifier', '>= 1.0.3'
+  gem 'compass-rails'
+  gem 'compass-h5bp'
 end
 
 gem 'jquery-rails'
-
+gem 'html5-rails'
 gem 'paperclip'
 
 # To use ActiveModel has_secure_password
@@ -32,7 +34,7 @@ gem 'paperclip'
 # gem 'jbuilder'
 
 # Use unicorn as the app server
-# gem 'unicorn'
+gem 'unicorn'
 
 # Deploy with Capistrano
 # gem 'capistrano'
